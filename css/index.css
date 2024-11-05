@@ -1,0 +1,336 @@
+/* FONT FACES - AVENIR */
+@font-face {
+    font-family: 'Avenir LT Std Black';
+    src: url('../fonts/Avenir/AvenirLTStd-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Bold';
+    src: url('../fonts/Avenir/AvenirNextLTPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Heavy';
+    src: url('../fonts/Avenir/AvenirNextLTPro-Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Light';
+    src: url('../fonts/Avenir/AvenirNextLTPro-Light.otf') format('opentype');
+}
+
+/* FONT FACES - BRUSH SCRIPT */
+@font-face {
+    font-family: 'Brush Script MT';
+    src: url('../fonts/Brush Script MT/BRUSHSCI.TTF') format('truetype');
+}
+
+/* FONT FACES - GREAT VIBE */
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../fonts/Great Vibes/GreatVibes-Regular.ttf') format('truetype');
+}
+
+/* FONT FACES - OUTFIT */
+@font-face {
+    font-family: 'Outfit Black';
+    src: url('../fonts/Outfit/Outfit-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url('../fonts/Outfit/Outfit-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit ExtraBold';
+    src: url('../fonts/Outfit/Outfit-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit ExtraLight';
+    src: url('../fonts/Outfit/Outfit-ExtraLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit Light';
+    src: url('../fonts/Outfit/Outfit-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit Medium';
+    src: url('../fonts/Outfit/Outfit-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/Outfit-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit SemiBold';
+    src: url('../fonts/Outfit/Outfit-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit Thin';
+    src: url('../fonts/Outfit/Outfit-Thin.otf') format('opentype');
+}
+
+/* FONT FACES - POPPINS */
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins.ttf') format('truetype');
+}
+
+/* STYLES INHERITED BY ALL ELEMENTS */
+* {
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* GLOBAL CSS VARIABLES */
+:root {
+    /* EXTRAS */
+    --text-color: #3c3c3c;
+    --light-text-color: #6c757d;
+    --border-color: #dee2e6;
+
+/* THEME COLORS - PALETTE ONE */
+    --aquamarine: #acfcd9ff;
+    --bright-pink-crayola: #fc6471ff;
+    --platinum: #ddddddff;
+    --royal-purple: #7d5ba6ff;
+    --turquoise: #55d6beff;
+
+/* THEME COLORS - PALETTE TWO */
+    --cornflower-blue: #5887ffff;
+    --maya-blue: #55c1ffff;
+    --medium-slate-blue: #715affff;
+    --prussian-blue: #102e4aff;
+    --tropical-indigo: #a682ffff;
+
+/* THEME COLORS - PALETTE THREE */
+    --light-red: #ff8484ff;
+    --mint-green: #d6fff6ff;
+    --russian-violet: #231651ff;
+    --turquoise: #4dccbdff;
+    --ucla-blue: #2374abff;
+
+/* THEME COLORS - PALETTE FOUR */
+    --bittersweet: #ff5a5fff;
+    --onyx: #3c3c3cff;
+    --puce: #c1839fff;
+    --teal: #087e8bff;
+    --white-smoke: #f5f5f5ff;
+
+/* NEUTRAL COLORS */
+    --black: #000000;
+    --white: #ffffff;
+
+/* PRIMARY COLORS */
+    --red: #ff0000;
+    --green: #00ff00;
+    --blue: #0000ff;
+
+/* SOLID COLORS */
+    --gray: #808080;
+    --orange: #ff6700;
+    --purple: #ff00ff;
+    --yellow: #ffff00;
+
+/* DARK COLORS */
+    --dark-blue: rgb(31, 31, 56);
+    --dark-blue-two: #070729;
+    --dark-gray: #626262;
+    --dark-red: #ab0e0e;
+
+/* LIGHT COLORS */
+    --light: #ffffff99;
+    --light-blue-one: #4db5ff;
+    --light-blue-two: #23A6D5;
+    --light-blue-three: #00ccff;
+    --light-gray: #d3d3d3;
+    --pale-white: #f0fff0;
+
+/* STATUS COLORS */
+    --danger: #f75842;
+    --success: #00bf8e;
+    --warning: #f7c94b;
+
+/* TRANSPARENT COLORS */
+    --black-trans-one: rgba(0, 0, 0, 0.2);
+    --black-trans-two: rgba(0, 0, 0, 0.3);
+    --black-trans-three: rgba(0, 0, 0, 0.5);
+    --black-trans-four: rgba(0, 0, 0, 1.0);
+    --white-trans-one: rgba(255, 255, 255, 0.2);
+    --white-trans-two: rgba(255, 255, 255, 0.3);
+    --white-trans-three: rgba(255, 255, 255, 0.5);
+    --white-trans-four: rgba(255, 255, 255, 1.0);
+
+/* GRADIENT COLORS */
+    --gradient-one: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    --gradient-two: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    --gradient-three: linear-gradient(var(--light-blue-one), var(--dark-blue));
+    --gradient-four: linear-gradient(145deg, var(--light-blue-one), var(--dark-blue));
+    --gradient-five: linear-gradient(-145deg, var(--ucla-blue) 40%, var(--platinum));
+    --gradient-seven: linear-gradient(360deg, var(--light-blue-one), var(--dark-blue));
+    --gradient-eight: linear-gradient(360deg, var(--white), var(--dark-blue) 65%);
+
+/* BOX SHADOWS - DARK*/
+    --box-shadow-dark-one: 0 0 5px var(--black-trans-one);
+    --box-shadow-dark-two: 0 0 5px var(--black-trans-two);
+    --box-shadow-dark-three: 0 0 5px var(--black-trans-three);
+    --box-shadow-dark-four: 0 0 5px var(--black-trans-four);
+    --box-shadow-dark-five: 0 0 7px var(--black-trans-one);
+    --box-shadow-dark-six: 0 0 7px var(--black-trans-two);
+    --box-shadow-dark-seven: 0 0 7px var(--black-trans-three);
+    --box-shadow-dark-eight: 0 0 7px var(--black-trans-four);
+    --box-shadow-dark-nine: -2rem 0 2rem var(--black-trans-two);
+
+/* BOX SHADOWS - LIGHT*/
+    --box-shadow-light-one: 0 0 5px var(--white-trans-one);
+    --box-shadow-light-two: 0 0 5px var(--white-trans-two);
+    --box-shadow-light-three: 0 0 5px var(--white-trans-three);
+    --box-shadow-light-four: 0 0 5px var(--white-trans-four);
+    --box-shadow-light-five: 0 0 7px var(--white-trans-one);
+    --box-shadow-light-six: 0 0 7px var(--white-trans-two);
+    --box-shadow-light-seven: 0 0 7px var(--white-trans-three);
+    --box-shadow-light-eight: 0 0 7px var(--white-trans-three);
+    --box-shadow-light-nine: -2rem 0 2rem var(--white-trans-two);
+
+/* CONTAINER WIDTH */
+    --container-width-lg: 76%; /* For large devices */
+    --container-width-md: 90%; /* For medium devices */
+    --container-width-sm: 94%; /* For small devices */
+
+/* GLOBAL TRANSITION */
+    --transition: all 500ms ease;
+}
+
+/* SPECIFICALLY FOR THE BODY (WITH/WITHOUT ELEMENTS) */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--gradient-five);
+    color: var(--white);
+    font-family: Outfit, 'sans-serif';
+    line-height: 1.7;
+}
+
+/* GLOBAL CSS STYLES */
+.container {
+    margin: 0 auto;
+    width: var(--container-width-lg);
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--light);
+}
+
+section > h2 {
+    color: var(--light-blue-one);
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--light);
+}
+
+a {
+    color: var(--light-blue-one);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--white);
+}
+
+.icon {
+    font-size: 21px;
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--light-blue-one);
+    padding: 0.75rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 1px solid var(--light-blue-one);
+    transition: var(--transition);
+    font-family: Outfit, 'sans-serif';
+    background: var(--white);
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--light-blue-one);
+    border-color: transparent;
+}
+
+.btn-primary {
+    background: var(--light-blue-one);
+    color: var(--dark-blue);
+    border-color: transparent;
+}
+
+.header__h1 {
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.header__h5 {
+    text-align: center;
+    color: var(--light);
+}
+
+
+/* img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+} */
+
+/* MEDIA QUERIES FOR MEDIUM DEVICES */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }    
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* MEDIA QUERIES FOR SMALL DEVICES */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,141 @@
+h5 {
+    color: var(--light);
+}
+
+.contact__container {
+    background: var(--gradient-one);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: auto;
+    margin: 7rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 150px var(--black-trans-two);
+}
+
+.header__h1 {
+    margin-top: 10rem;
+}
+
+/* =============== ASIDE =============== */
+.contact__aside {
+    background: var(--gradient-four);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 6.7rem;
+    bottom: 15rem;
+    box-shadow: 0 0 5px var(--black-trans-two);
+}
+
+.aside__image {
+    width: 17rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 1rem; 
+    font-family: 'Avenir Next LT Pro Heavy';
+    color: var(--white);
+}
+
+.contact__aside p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.contact__socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contact__socials a {
+    background: var(--light-blue-one);
+    padding: 1rem;
+    display: flex;
+    border-radius: 50%;
+    transition: var(--transition);
+    margin-left: 0.4rem;
+    box-shadow: 0 0 5px var(--black-trans-two);
+}
+
+.contact__socials a i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.contact__socials a:hover {
+    background: var(--light-blue-two);
+}
+
+/* =============== FORM =============== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.form__name input[type="text"] {
+    width: 50%;
+}
+
+button {
+    box-shadow: 0 0 5px var(--black-trans-two);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--dark-blue);
+    box-shadow: 0 0 5px var(--black-trans-two);
+    resize: none;
+    color: var(--white);
+    border-radius: 0.5rem;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1036px) {
+    .contact__aside {
+        display: none;
+    }  
+  
+    .contact__container {
+        display: flex;
+        justify-content: center;
+        padding: 4rem;
+    }
+
+    form {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .contact__container {
+         margin-bottom: -16rem;
+    }
+
+    .header__h1 {
+         margin-top: 8rem;
+    }
+
+    h5 {
+         color: var(--light);
+         margin-bottom: -4rem;
+    }
+}

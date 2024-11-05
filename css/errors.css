@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Avenir Next LT Pro Heavy;
+    src: url('../fonts/AvenirNextLTPro-Heavy.otf') format('opentype');
+}
+
+body {
+    background: var(--gradient-one);
+    /* animation: change 10s ease-in-out infinite; */
+}
+
+.error__images-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    border: 1px solid var(--gradient-one);
+    border-radius: 1rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5rem;
+    background: var(--gradient-one);
+}
+
+/* @keyframes change {
+    0% {
+         background-position: 0 50%;
+    }
+    50% {
+         background-position: 100% 50%;
+    }
+    100% {
+         background-position: 0 50%;
+    }
+} */
+
+.error__images {
+    width: 128px;
+    height: 128px;
+}
+
+.btn__errors {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.header__h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 900;
+    font-family: 'Avenir Next LT Pro Heavy';
+}
+
+.header__h5 {
+    color: var(--light);
+    margin-top: 3rem;
+    margin-bottom: -7rem;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+    .error__images-container {
+         margin-left: 5rem;
+         margin-right: 5rem;
+    }
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .error__images {
+         width: 84px;
+         height: 84px;
+    }
+    
+    .error__images-container {
+         padding: 3rem;
+    }
+
+    .header__h1 {
+         font-size: 1.8rem;
+         font-family: 'Poppins';
+    }
+
+    .header__h5 {
+         margin-bottom: -15rem;
+         padding: 1.7rem;
+     }
+}

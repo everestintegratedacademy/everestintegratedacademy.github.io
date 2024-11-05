@@ -1,0 +1,100 @@
+footer {
+    background: var(--light-blue-two);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10rem;
+}
+
+footer a {
+    color: var(--dark-blue);
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+.footer__logo {
+    font-family: 'Avenir Next LT Pro Heavy';
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    display: inline-block;
+    color: var(--white);
+}
+
+.footer__logo-img {
+    height: 64px;
+    width: 74px;
+    display: block;
+    margin: 0 auto 2rem;
+    cursor: pointer;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.footer__socials a > img {
+    height: 20px;
+    width: 20px;
+}
+
+.footer__socials a {
+    background: var(--dark-blue-two);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    transition: var(--transition);
+    box-shadow: 0 0 5px var(--black-trans-two);
+}
+
+.footer__socials a:hover {
+    background: var(--dark-blue);
+}
+
+.copyright {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--light);
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+    footer {
+        margin-top: 10rem;
+        margin-right: -73.5px;
+        width: 107.20%;
+    }
+
+    .footer__logo {
+        font-size: 2rem;
+    }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .footer__logo {
+        font-size: 1.7rem;
+        font-weight: 600;
+        font-family: 'Poppins';
+    }
+   
+    .copyright {
+        padding: 1.2rem;
+        margin-bottom: -1rem;
+    }
+}

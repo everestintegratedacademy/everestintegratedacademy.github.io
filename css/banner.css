@@ -1,0 +1,63 @@
+.banner {
+    background: var(--black-trans-two);
+    width: max-content;
+    display: block;
+    padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 5px var(--black-trans-two);
+    transition: var(--transition);
+}
+
+.admissions__msg {
+    color: var(--white);
+    font-family: Outfit;
+    font-size: 14.75px;
+}
+
+.banner__btn-more {
+    background: var(--white);
+    backdrop-filter: blur(7px);
+    font-family: Outfit;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    transition: var(--transition);
+    border: 1px solid (--white-trans-three);
+    color: var(--black);
+    box-shadow: 0 0 5px var(--black-trans-two);
+    cursor: pointer;
+}
+
+.banner__btn-more:hover {
+    background: var(--black-trans-two);
+    border-color: transparent;
+    color: var(--white);
+}
+
+.banner__btn-close {
+     font-size: 24px;
+     cursor: pointer;
+     line-height: 1.75rem;
+}
+
+.banner__btn-close:hover {
+     color: var(--black-trans-three);
+}
+
+.banner.none {
+     display: none;
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+     .banner {
+        display: none;
+     }
+}

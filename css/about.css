@@ -1,0 +1,220 @@
+/* =============== ACHIEVEMENTS =============== */
+/* .about__achievements-container {
+    margin-bottom: 15rem;
+} */
+
+.about__achievements-content > h1 {
+    /* font-family: 'Avenir Next LT Pro Bold'; */
+    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+.counter__row {
+    width: 85%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.counter__col {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.counter__col h2 {
+    color: var(--ucla-blue);
+    font-family: Avenir Next LT Pro Heavy;
+    background: var(--bittersweet);
+    border-radius: 1.2rem;
+    margin-bottom: 1.7rem;
+    box-shadow: var(--box-shadow-dark-one);
+}
+
+.counter__col-box {
+    width: 100%;
+    height: 100%;
+    background: var(--gray);
+    padding: 2.7rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-dark-two);
+}
+
+.counter__col-box-h3 {
+    margin-bottom: 1rem;
+    font-family: 'Avenir LT Std Black';
+}
+
+.counter__col-box-p {
+    display: flex;
+    font-family: 'Avenir Next LT Pro Light';
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+/* =============== VISION & MISSION =============== */
+.about__statements-container {
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.vision__mission {
+    padding: 2rem;
+    background: var(--platinum);
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.vision__mission-statement {
+    border: 2px solid var(--onyx);
+    padding: 2rem;
+    border-radius: 0.2rem;
+    box-shadow: var(--box-shadow-dark-five);
+}
+
+.statements {
+    text-align: center;
+    font-family: 'Avenir Next LT Pro Light';
+    font-size: 1.5rem;
+    color: var(--maya-blue);
+}
+
+ .statement__name {
+    text-align: center;
+    font-family: 'Avenir Next LT Pro Heavy';
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: var(--gray);
+} 
+
+ 
+.about__vision {
+    background: var(--platinum);
+    padding: 5rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    border-radius: 0.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about__vision-box {
+    border: 2px solid var(--onyx);
+    padding: 5rem;
+    border-radius: 0.2rem;
+    box-shadow: var(--box-shadow-dark-five);
+}
+
+.about__vision-statement {
+    font-family: 'Avenir Next LT Pro Light';   
+    text-align: center; 
+    color: var(--light-blue-two);
+    font-size: 1.5rem;
+} 
+
+/* =============== TEAM =============== */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* .team {
+    background: var(--onyx);
+    box-shadow: inset 0 0 3rem var(--black-trans-three);
+} */
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    /* padding: 5rem; */
+}
+
+.team__member {
+    background: var(--gray);
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    margin-top: 5rem;
+    position: relative;
+}
+
+.team__member:hover {
+    background: var(--dark-gray);
+    border-color: var(--gray);
+}
+
+.team__member-image {
+    filter: saturate(0);
+}
+
+.team__member:hover .team__member-image {
+    filter: saturate(1);
+}
+
+.team__member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team__member-info p {
+    color: var(--light);
+    font-family: 'Avenir Next LT Pro Light';
+    font-weight: 600;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+    .about__achievements-content > h1 {
+        margin-top: 10rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .about__vision {
+        padding: 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .about__vision-box {
+        border: 2px solid var(--onyx);
+    	padding: 1rem;
+    	border-radius: 0.2rem;
+    }
+
+    .vision__mission {
+        padding: 2rem;
+    	margin-left: 2rem;
+    	margin-right: 2rem;
+    }
+
+    .team__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counter__row {
+        flex-direction: column;
+    }
+
+    .team__member {
+        margin-top: 0.8rem;
+        margin-bottom: -15rem;
+    }
+
+    .statements {
+        font-size: 1.2rem;
+    }
+
+    .statement__name {
+        font-size: 1rem;
+    }
+}
