@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everest Integrated Academy" />
+    <meta property="og:url" content="https://everestintegratedacademy.aiacademy.ac.ug" />
+    <meta property="og:description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="author" content="Dennis Sebalemba" />
+    <meta name="default-theme" content="auto" />
+    <meta name="description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="keywords" content="web,site,about,home,website,school,eia" />
+    <title>PEAK Curriculum - Everest Integrated Academy</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <!-- <link rel="stylesheet" href="./css/lucide/lucide.css" /> -->
+    <link rel="stylesheet" href="./css/feather.css" />
+    <link rel="stylesheet" href="./css/curriculum.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <!-- <link rel="stylesheet" href="./css/fontawesome/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/1890c09728.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+         <script src="./scripts/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+         <script src="./scripts/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script> -->
+         <script src="./scripts/pdf.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.min.js"></script> -->
+         <script src="./scripts/pdf.worker.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> -->
+         <script src="./scripts/qrcode.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script> -->
+         <script src="./scripts/jspdf.plugin.autotable.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
+         <script src="./scripts/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+</head>
+
+<body>
+    <!-- BEGIN NAVBAR SECTION -->
+    <nav id="navbar">
+        <div class="logo__container" onClick="redirectHome()">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+            <p>EVEREST INTEGRATED ACADEMY</p>
+        </div>
+        <a href="./index.html" class="navlink">
+            <i class="icon icon-home"></i>
+            <p>Home</p>
+        </a>
+        <div class="navlink dropdown">
+            <a href="./about.html" class="navlink">
+                <i class="icon icon-help-circle"></i>
+                <p>About Us</p>
+            </a>
+            <div class="dropdown-content">
+                <a href="./board-of-directors.html" class="navlink">
+                    <p>School Board</p>
+                </a>
+                <a href="./our-story.html" class="navlink">
+                    <p>Our Story</p>
+                </a>
+                <a href="./mission.html" class="navlink">
+                    <p>Our Mission</p>
+                </a>
+            </div>
+        </div>
+        <a href="./blog.html" class="navlink">
+            <i class="icon icon-file-text"></i>
+            <p>Blog</p>
+        </a>
+        <a href="./gallery.html" class="navlink">
+            <i class="icon icon-image"></i>
+            <p>Gallery</p>
+        </a>
+        <a href="./fees.html" class="navlink">
+            <i class="icon icon-dollar-sign"></i>
+            <p>Tuition</p>
+        </a>
+        <a href="./curriculum.html" class="navlink">
+            <i class="icon icon-book-open"></i>
+            <p>Curriculum</p>
+        </a>
+        <a href="./contact.html" class="navlink">
+            <i class="icon icon-headphones"></i>
+            <p>Contact Us</p>
+        </a>
+    </nav>
+    <script src="./scripts/navbar.js"></script>
+    <!-- END NAVBAR SECTION -->
+
+    <!-- Begin Main Content -->
+    <main class="curriculum-page">
+        <div class="container">
+            <!-- Header Section -->
+            <header class="page-header">
+                <h1 class="header__h1">PEAK Curriculum</h1>
+                <p class="curriculum__tagline">Personalized Education and Academic Knowledge</p>
+            </header>
+
+            <!-- Mission and Vision Section -->
+            <section class="mission-vision">
+                <!-- Mission content -->
+                <div class="mission">
+                    <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                    <p>To provide a transformative educational experience that empowers students to reach their full
+                        potential academically, spiritually, and personally, preparing them to be leaders and innovators
+                        in a rapidly changing world.</p>
+                </div>
+                <!-- Vision content -->
+                <div class="vision">
+                    <h2><i class="fas fa-eye"></i> Our Vision</h2>
+                    <p>To be the premier Christian educational institution, recognized globally for our innovative
+                        curriculum, holistic approach to student development, and commitment to producing graduates who
+                        make a positive impact on society.</p>
+                </div>
+            </section>
+
+            <!-- Curriculum Overview Section -->
+            <section class="curriculum-overview">
+                <div class="header-date">
+                    <h2><i class="fas fa-mountain"></i> ELEVATING EDUCATION TO NEW HEIGHTS</h2>
+                </div>
+                <div>
+                    <p>The <strong>PEAK</strong> curriculum is <strong>Everest Integrated Academy's pioneering
+                            educational framework</strong>, officially launched on <em>November 27, 2023</em>. This date
+                        marks the beginning of a new era in education, where <strong>innovation, tradition</strong>, and
+                        <strong>holistic development</strong> converge to shape the future of learning. Inspired by the
+                        academy’s commitment to creating <strong>leaders and visionaries</strong>, PEAK is designed to
+                        not only challenge the mind but also cultivate the spirit and soul.
+                    </p>
+                    <br>
+                    <p>Rooted in <strong>Christian values</strong> and driven by a vision for the future, PEAK was
+                        conceived after years of research, exploration, and collaboration among educators, spiritual
+                        leaders, and innovators. The academy’s founders aimed to address the <em>growing complexities of
+                            the modern world</em>, where both <strong>technological advancement</strong> and
+                        <strong>moral leadership</strong> are critical. Thus, <strong>PEAK</strong> was born—not just as
+                        a curriculum but as a <em>transformative educational experience</em> that equips students to
+                        face the challenges and opportunities of the 21st century.
+                    </p>
+                    <br>
+                    <p>At its core, <strong>PEAK</strong> emphasizes that <em>education should be as dynamic as the
+                            world in which we live</em>. Its unveiling on that brisk November morning symbolized more
+                        than just a curriculum; it celebrated <strong>innovation and faith</strong>. The <strong>PEAK
+                            model</strong> represents a new approach to learning, merging <strong>academic
+                            rigor</strong> with <em>personalized, hands-on experiences</em> and a strong ethical
+                        foundation.</p>
+                    <br>
+                    <p>PEAK’s innovative approach seamlessly integrates <strong>STEM disciplines</strong> with the
+                        <strong>humanities</strong>, cultivating not just critical thinkers but also <em>creators,
+                            problem solvers</em>, and <strong>future leaders</strong>. Each aspect of the curriculum is
+                        designed to challenge students intellectually, while nurturing their <em>emotional
+                            intelligence</em> and <em>spiritual well-being</em>. The Christian principles that guide
+                        Everest Integrated Academy ensure that students develop a <strong>strong moral compass</strong>,
+                        a deep sense of empathy, and a commitment to <em>servant leadership</em>.
+                    </p>
+                    <br>
+                    <p>PEAK’s pillars—such as <em>Academic Excellence, Critical Thinking, Leadership, Spiritual
+                            Growth,</em> and <em>Global Citizenship</em>—are not merely abstract concepts but <em>living
+                            principles</em>. These elements are experienced through leadership projects,
+                        entrepreneurship opportunities, and global exchange programs. One moving story from PEAK's
+                        inaugural year involved middle school students developing a sustainable energy initiative for
+                        underprivileged communities—an example of how students apply their learning to make a real-world
+                        impact.</p>
+                    <br>
+                    <p>The curriculum places great emphasis on <strong>personalized learning</strong>. Students are
+                        encouraged to pursue their unique talents through advanced coursework, entrepreneurship, and
+                        <strong>STEM electives</strong>, including cutting-edge subjects like <em>Robotics</em> and
+                        <em>AI</em>. This blend of advanced academics and personal development empowers students to
+                        explore their passions and excel.
+                    </p>
+                    <br>
+                    <p>Recognizing the importance of <strong>digital literacy</strong>, PEAK provides students with
+                        essential technology skills and a strong foundation in <em>digital ethics</em>. Courses in data
+                        science, coding, and more ensure that students are well-prepared for the technological landscape
+                        of tomorrow, equipped with both the skills and the moral guidance needed to lead responsibly.
+                    </p>
+                    <br>
+                    <p>The unveiling of <strong>PEAK</strong> on <em>November 27, 2023</em> was more than a milestone
+                        for Everest Integrated Academy—it was a turning point in education, representing a bold new
+                        standard in holistic, faith-based, and forward-thinking instruction. With <strong>PEAK</strong>,
+                        students are prepared not only for academic success but to make a lasting, positive impact on
+                        the world as compassionate, driven, and ethical leaders.</p>
+                </div>
+            </section>
+
+
+            <!-- Curriculum Pillars Section -->
+            <section class="curriculum-pillars">
+                <h2><i class="fas fa-columns"></i> The Nine Pillars of PEAK</h2>
+                <div class="pillar-container">
+                    <div class="pillar">
+                        <i class="fas fa-brain"></i>
+                        <h3>Academic Excellence</h3>
+                        <p>
+                            Rigorous coursework in core subjects to build a strong
+                            foundation, with advanced options for accelerated learners.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Critical Thinking & Innovation</h3>
+                        <p>
+                            Developing analytical skills, problem-solving abilities, and
+                            fostering creativity across all disciplines.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Character & Leadership</h3>
+                        <p>
+                            Instilling values, ethics, and leadership skills through
+                            community service and mentorship programs.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Global Citizenship</h3>
+                        <p>
+                            Cultivating awareness and responsibility in an interconnected
+                            world through cultural studies and exchange programs.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-cross"></i>
+                        <h3>Spiritual Growth</h3>
+                        <p>
+                            Nurturing faith and Christian values through biblical studies,
+                            worship, and faith-based community activities.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Digital Literacy</h3>
+                        <p>
+                            Equipping students with essential technological skills and
+                            understanding of digital ethics for the modern world.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Holistic Well-being</h3>
+                        <p>
+                            Promoting physical, mental, and emotional health through sports,
+                            counseling, and mindfulness practices.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-palette"></i>
+                        <h3>Creative Expression</h3>
+                        <p>
+                            Encouraging artistic development and self-expression through
+                            various forms of art, music, and performance.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Environmental Stewardship</h3>
+                        <p>
+                            Fostering a deep understanding of environmental issues and
+                            promoting sustainable practices.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Curriculum Metrics Section -->
+            <section class="curriculum-metrics">
+                <h2><i class="fas fa-chart-line"></i> PEAK Success Metrics</h2>
+                <div class="metrics-container">
+                    <div class="metric">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3 class="counter" data-target="98" data-format="percentage">0</h3>
+                        <p>College Acceptance Rate</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-award"></i>
+                        <h3 class="counter" data-target="85">0</h3>
+                        <p>Students in Honors Programs</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-users"></i>
+                        <h3 class="counter" data-target="12" data-format="ratio" data-ratio-value="2">0</h3>
+                        <p>Student-Teacher Ratio</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-globe"></i>
+                        <h3 class="counter" data-target="30">0</h3>
+                        <p>Countries Represented</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-book-reader"></i>
+                        <h3 class="counter" data-target="95" data-format="percentage">0</h3>
+                        <p>AP Exam Pass Rate</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3 class="counter" data-target="25" data-format="percentage">0</h3>
+                        <p>Above National Average SAT Scores</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-university"></i>
+                        <h3 class="counter" data-target="1200">0</h3>
+                        <p>Graduates Attending Top 100 Universities</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-language"></i>
+                        <h3 class="counter" data-target="3">0</h3>
+                        <p>Average Languages Spoken per Student</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-medal"></i>
+                        <h3 class="counter" data-target="250">0</h3>
+                        <p>National Merit Scholars (Last 5 Years)</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3 class="counter" data-target="10000">0</h3>
+                        <p>Community Service Hours (Annual)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grade Conversion Calculator Section -->
+            <section class="grade-conversion">
+                <div class="calculator-container">
+                    <h2><i class="fas fa-exchange-alt"></i> Grade Conversion Calculator</h2>
+                    <!-- Calculator inputs and button -->
+                    <div class="input-group">
+                        <input type="text" id="gradeInput" placeholder="e.g. 95 or A" />
+                        <select id="systemSelect">
+                            <option value="peak">PEAK</option>
+                            <option value="peakAlternative">PEAK Alternative</option>
+                            <option value="us">US</option>
+                            <option value="uk">UK</option>
+                            <option value="ib">IB</option>
+                            <option value="cambridgeIGCSE">Cambridge IGCSE</option>
+                            <option value="cambridgeGCSE">Cambridge GCSE</option>
+                            <option value="ace">A.C.E</option>
+                        </select>
+                        <button id="convertButton">Convert</button>
+                    </div>
+                    <div id="conversionResult"></div>
+                    <div class="chart-container" style="display: none">
+                        <canvas id="gradeConversionChart"></canvas>
+                        <canvas id="collegeAdmissionChart"></canvas>
+                        <div id="admissionChances" class="admission-chances"></div>
+                    </div>
+                    <div class="download-container">
+                        <button id="downloadPDF">Download PDF</button>
+                    </div>
+
+                    <div class="stored-results">
+                        <h3>Stored Results</h3>
+                        <ul id="storedResultsList"></ul>
+                    </div>
+
+                    <div id="transcriptConversion">
+                        <h2><i class="fa-solid fa-award"></i>Academic Transcript Conversion</h2>
+                        <div id="dropzone" class="dropzone">
+                            <div class="icon-container">
+                                <i class="fas fa-file-pdf"></i>
+                                <i class="fas fa-file-word"></i>
+                                <i class="fas fa-file-excel"></i>
+                                <i class="fas fa-file-csv"></i>
+                            </div>
+                            <p>
+                                <br>
+                                Drag and drop your transcript file here or click to select one.
+                                <br>
+                                Maximum File Size: 25 Mbs
+                            </p>
+                        </div>
+                        <input type="file" id="transcriptUpload" accept=".csv, .xlsx, .pdf" style="display: none;">
+                        <div id="fileInfo" class="file-info" style="display: none;"></div>
+                        <select id="fromSystem">
+                            <option value="peak">PEAK</option>
+                            <option value="peakAlternative">PEAK Alternative</option>
+                            <option value="us">US</option>
+                            <option value="uk">UK</option>
+                            <option value="ib">IB</option>
+                            <option value="cambridgeIGCSE">Cambridge IGCSE</option>
+                            <option value="cambridgeGCSE">Cambridge GCSE</option>
+                            <option value="ace">A.C.E</option>
+                        </select>
+                        <select id="toSystem">
+                            <option value="peak">PEAK</option>
+                            <option value="peakAlternative">PEAK Alternative</option>
+                            <option value="us">US</option>
+                            <option value="uk">UK</option>
+                            <option value="ib">IB</option>
+                            <option value="cambridgeIGCSE">Cambridge IGCSE</option>
+                            <option value="cambridgeGCSE">Cambridge GCSE</option>
+                            <option value="ace">A.C.E</option>
+                        </select>
+                        <button id="convertTranscript">Convert Transcript</button>
+                        <div id="transcriptResults"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conversion Table Section -->
+            <section class="conversion-table">
+                <h2><i class="fas fa-table"></i> Grade Conversion Table</h2>
+                <table id="conversionTable">
+                    <thead>
+                        <tr>
+                            <th>PEAK</th>
+                            <th>PEAK Alternative</th>
+                            <th>US</th>
+                            <th>UK</th>
+                            <th>IB</th>
+                            <th>Cambridge IGCSE</th>
+                            <th>Cambridge GCSE</th>
+                            <th>A.C.E</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be dynamically populated -->
+                    </tbody>
+                </table>
+                <div class="download-buttons">
+                    <button id="downloadCSVBtn" class="download-btn csv-btn">
+                        <i class="fa-solid fa-file-csv"></i>
+                        Download as .csv file
+                    </button>
+                    <button id="downloadXLSXBtn" class="download-btn xlsx-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 64 64">
+                            <image width="64" height="64" preserveAspectRatio="none"
+                                style="image-rendering:optimizeQuality"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAdhAAAHYQGVw7i2AAAA&#10;GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABWpJREFUeJztm2tsFFUYhp8zO9vu&#10;llLaCqW1BYMVAlEqCKZcJBJACsZoQEsqikaTIqiIRowhMaGoQCCKiRKjBCFcFI2SEFPQKHJRLg13&#10;RYillBpKKZReKKXd7V7m+KMwWilhdndmZwn7/Ptmz5nz7rsz53znshDn9kZEVLukRLk799xLUsoC&#10;FLqZpEknKT2tPjEluafZ91WQDZqUGw6PKSmNyIB+64o/RjDHLGH/Jyk15Q9XWkqeVfeXQrzgCLfy&#10;nZ/PTFIT2AQoJmrqhNOVeEF1J/a26v4CBoUt3pUssgHVRD12MCD8Xy+gRdZ/xAbCssf3ViFugN0C&#10;7CZugN0C7CZugN0C7Oa2N0DP5HouKshSUQdKBUPpcXtjQ46je3JYjQoJwqkiHGFn4qah5iwvdPu9&#10;ntVAkQSQxioGPD4CnsbIGk9ykZCeCsK+pFL1eT0lAorsaDzQ5sV3paYtqAWvdPl5Rs9L7Vfa6qzU&#10;oAqYamUDN0MIkRRsa08S6vXdUdDnPxUMBDKsbF8BLJtuGkEgkFd8BC+2QlCLevuxMwoENLTm9qg3&#10;GzsGANIfjHqbMWUAmsEhyEQMrehM6p/Pi8Mf0+OVB75n26kD15VLSezGZ0+8hXp1fD9aW8HinetM&#10;kmoNhgzYWXWEdycU0ze1o7/MTunFztOHCWidH9nZ+VMYlzsMAE1Kluxab7Jc8zH0CngDPhZuX63H&#10;uenZFN43rlOZdHcKxQ8+rsdrDpVy5NxJk2Rah+E+YEv5XnZVHdXjeWOeJsHh1OPXR08jOcENQF1r&#10;E0t//dJEmdYRUif4zs8r8WsBoOM1eHZIAQAZ3dJ4buhkvdyCbau43N5qokzrCMmAioZqvjhYqsdz&#10;RxXiUhOYnT8Fl5oAwL4zf7L5xG/mqrSQkIfBD3dvpK61CYDeyenMGVnI8w90/Pr+YIB5P65AGp1R&#10;xQAhG9DS3sb7O9bq8ZsPFZHkdAGwomwTlQ015qmLAmElQt8e205Z9fFO12ouX+STfd+ZIiqahLW1&#10;JZH83VTLiD736tcCWhBNhjGZkZBY7UHzdXSuTu+/iyTe5lraetSHI9EwYT0BeZn3MG3w+E7X7krN&#10;5NWRT5kiKpqEbIAiBMsmvYxydRWntHyv/tmcEU/SLy3LPHVRIGQDnrm/gCFZ/QE4dr6SWZuXUdFQ&#10;DUCimsCSgtnmKrSYkAxIdXdn/tgZevzB7o0EtCBLd23Qr43tN5TJA0aYp9BiQjJg/sMzSHenAHC8&#10;roqfKvYDsKV8Hwdr/tLLvTehGLcz0USZ1mHYgMGZuXrqC/DRnm/0hEciWfDLKj3O6ZHB3FHTTJZq&#10;DYYMEAiWTJyF4+pxgpP11Wz9T+cHcKimnB9OlunxK/lTyb0j20Sp1mDIgKK8CQzPHqjHy/d8jSav&#10;T3cX7VirT5acDpXFj8wySaZ1GEqE9p89wcQ1b+jx8QunuyxX2VjDuFWvdXr/nYqqmxKLGDKgstF4&#10;fn9tSLxViK1FURuIGwBcsFVBQEPasBx+DRUpNiHk23YJkE0eZLDrDRGHX0rNr1m4OaqgOt2uhX6v&#10;pw8w3bqGukY2etCqmm64Je9oCYx2tFg6grToG/O9lj2a6fCLQUYPSIhL7f2DZ5s/DWtDU4L0BpG+&#10;zl9OKAI1NSn0+4VPS9gnE7Km5w/zX/YclCbu6DrcCShu580LmkdLbBx2FgIlUY32lwciPO2tdneZ&#10;sAIsEIqNR2Qiqq0IRIR/OrGbeCJktwC7iRtgtwC7iRsQbkWhiFtnB/TGyLANUDW1CsMHa2MTCafD&#10;Pq3cfOyMNzkvpy8w1ERNUUWRYl5EidB5X9+ZvZ3VvwshxwuI6iwmEqSgHo31tV+VbbVbSxy7+Qd8&#10;NJoSYxNhVwAAAABJRU5ErkJggg==&#10;" />
+                        </svg>
+                        Download as .xlsx file
+                    </button>
+                </div>
+                <p class="table-note">NOTE: Please don't take these conversions literally. For example, if you have an
+                    <i><b>A-</b></i> in PEAK, don't assume it corresponds to a <i><b>5</b></i> in IB unless you've used
+                    the grade converter above and it indicates so. Your <i><b>A-</b></i> could be equivalent to a
+                    <i><b>7</b></i>.
+                </p>
+            </section>
+
+            <!-- PEAK Journey Section -->
+            <section class="peak-journey">
+                <h2><i class="fas fa-road"></i> PEAK Journey Map</h2>
+                <div class="journey-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="elementary">
+                            <i class="fas fa-child"></i> <span>Elementary</span>
+                        </button>
+                        <button class="tab-btn" data-tab="junior">
+                            <i class="fas fa-book-reader"></i> <span>Junior</span>
+                        </button>
+                        <button class="tab-btn" data-tab="middle">
+                            <i class="fas fa-chalkboard-teacher"></i> <span>Middle</span>
+                        </button>
+                        <button class="tab-btn" data-tab="high">
+                            <i class="fas fa-graduation-cap"></i> <span>High</span>
+                        </button>
+                        <button class="tab-btn" data-tab="beyond">
+                            <i class="fas fa-rocket"></i> <span>BEYOND</span>
+                        </button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="elementary">
+                            <h3>Elementary (Grades 1-5)</h3>
+                            <p>
+                                Foundation building years focusing on core subjects, critical
+                                thinking, and character development. Students engage in
+                                hands-on learning experiences and begin to explore their
+                                interests through various enrichment activities.
+                            </p>
+                            <ul>
+                                <li>Core subject mastery</li>
+                                <li>Introduction to STEM concepts</li>
+                                <li>Character education</li>
+                                <li>Arts and music integration</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="junior">
+                            <h3>Junior (Grades 6-8)</h3>
+                            <p>
+                                Transition years emphasizing academic rigor, personal
+                                responsibility, and leadership skills. Students are introduced
+                                to more advanced concepts and begin to specialize in areas of
+                                interest.
+                            </p>
+                            <ul>
+                                <li>Advanced math and science</li>
+                                <li>Critical writing and research skills</li>
+                                <li>Introduction to foreign languages</li>
+                                <li>Leadership and community service</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="middle">
+                            <h3>Middle (Grades 9-10)</h3>
+                            <p>
+                                Preparatory years for advanced studies, focusing on depth of
+                                knowledge, research skills, and community engagement. Students
+                                begin to shape their academic and career paths through
+                                elective choices and extracurricular activities.
+                            </p>
+                            <ul>
+                                <li>Specialized STEM courses</li>
+                                <li>Advanced humanities and social sciences</li>
+                                <li>Career exploration</li>
+                                <li>Entrepreneurship projects</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="high">
+                            <h3>High (Grades 11-13)</h3>
+                            <p>
+                                Advanced studies preparing students for higher education and
+                                beyond. Rigorous coursework, including AP and IB options,
+                                internships, and capstone projects help students develop
+                                college-ready skills and explore potential career paths.
+                            </p>
+                            <ul>
+                                <li>College-level courses and research</li>
+                                <li>Internship opportunities</li>
+                                <li>Global exchange programs</li>
+                                <li>College and career counseling</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="beyond">
+                            <h3>BEYOND Program</h3>
+                            <p>
+                                Post-graduate opportunities for exceptional students,
+                                including advanced research projects, university-level
+                                courses, and global leadership programs. The BEYOND program
+                                bridges the gap between high school and higher education or
+                                career entry.
+                            </p>
+                            <ul>
+                                <li>University partnerships</li>
+                                <li>Research fellowships</li>
+                                <li>Global leadership initiatives</li>
+                                <li>Entrepreneurship incubator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses and Electives Section -->
+            <section class="courses-electives">
+                <h2><i class="fas fa-book"></i> Comprehensive Curriculum Offerings</h2>
+                <div class="courses-container">
+                    <div class="course-category">
+                        <h3><i class="fas fa-atom"></i> Core Subjects</h3>
+                        <ul>
+                            <li>Advanced Mathematics</li>
+                            <li>Integrated Science</li>
+                            <li>English Grammar</li>
+                            <li>Global History</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-pen-fancy"></i> English</h3>
+                        <ul>
+                            <li>Literary Analysis</li>
+                            <li>Creative Writing</li>
+                            <li>World Literature</li>
+                            <li>Public Speaking</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-flask"></i> Science</h3>
+                        <ul>
+                            <li>Biology</li>
+                            <li>Physics</li>
+                            <li>Chemistry</li>
+                            <li>Environmental Science</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-microchip"></i> STEM Electives</h3>
+                        <ul>
+                            <li>Robotics and AI</li>
+                            <li>Data Science</li>
+                            <li>Biotechnology</li>
+                            <li>Environmental Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-globe-americas"></i> Social Studies</h3>
+                        <ul>
+                            <li>Continental History</li>
+                            <li>Geography</li>
+                            <li>Civics and Government</li>
+                            <li>Sociology</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-palette"></i> Arts and Humanities</h3>
+                        <ul>
+                            <li>Digital Media Arts</li>
+                            <li>World Languages</li>
+                            <li>Philosophy and Ethics</li>
+                            <li>Music Theory and Composition</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-chart-line"></i> Business and Economics</h3>
+                        <ul>
+                            <li>Entrepreneurship</li>
+                            <li>International Economics</li>
+                            <li>Financial Literacy</li>
+                            <li>Business Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-heartbeat"></i> Physical Education and Wellness</h3>
+                        <ul>
+                            <li>Advanced Sports Training</li>
+                            <li>Mindfulness and Meditation</li>
+                            <li>Nutrition Science</li>
+                            <li>Outdoor Education</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-users"></i> Special Programs</h3>
+                        <ul>
+                            <li>Global Citizenship</li>
+                            <li>Leadership Development</li>
+                            <li>Community Service</li>
+                            <li>Internship Program</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-language"></i> Languages</h3>
+                        <ul>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>German</li>
+                            <li>Mandarin</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-laptop-code"></i> Computer Science</h3>
+                        <ul>
+                            <li>Programming Fundamentals</li>
+                            <li>Web Development</li>
+                            <li>Mobile App Development</li>
+                            <li>Cybersecurity</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3><i class="fas fa-theater-masks"></i> Performing Arts</h3>
+                        <ul>
+                            <li>Drama and Theater</li>
+                            <li>Dance</li>
+                            <li>Vocal Performance</li>
+                            <li>Instrumental Music</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partnerships Section -->
+            <section class="partnerships">
+                <h2><i class="fas fa-handshake"></i> PEAK Partnerships</h2>
+                <p>PEAK has established partnerships with top universities and colleges, offering scholarships of upto 50% to
+                    high-performing first-year PEAK students. Please note that these scholarships will only apply for the first year of education at colleges and universities:</p>
+                <div class="partnership-logos">
+                    <a href="https://www.harvard.edu/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://1000logos.net/wp-content/uploads/2017/02/Harvard-Logo.png"
+                            alt="Harvard University" />
+                    </a>
+                    <a href="https://www.stanford.edu/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://identity.stanford.edu/wp-content/uploads/sites/3/2020/07/stanford-university-stacked.png"
+                            alt="Stanford University" />
+                    </a>
+                    <a href="https://web.mit.edu/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://1000logos.net/wp-content/uploads/2022/08/MIT-Logo.png" alt="MIT" />
+                    </a>
+                    <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Oxford-University-Circlet.svg"
+                            alt="Oxford University" />
+                    </a>
+                    <a href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.cam.ac.uk/sites/www.cam.ac.uk/files/inner-images/logo.jpg"
+                            alt="Cambridge University" />
+                    </a>
+                    <a href="https://www.northeastern.edu/" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                            aria-label="Northeastern University" style="enable-background:new 0 0 486 180"
+                            viewBox="0 0 486 180">
+                            <style>
+                                .st2 {
+                                    fill: #000
+                                }
+                            </style>
+                            <g id="Layer_1">
+                                <path
+                                    d="m381.9 152.1 7.5-16.7c1.5-3.3 2-4 3.5-4.4v-1.1H385v1.1c2.6.6 2.9 1.9 1.7 4.7l-3 7.3-3.8-8.5c-.8-1.9-.7-3 2.1-3.3V130h-10.5v1.2c1.2.3 1.7.8 2.8 3.1l6.7 14.4-1.1 2.4c-.6 1.4-1.2 2.4-1.9 3-.5-1.6-1.4-2.5-2.8-2.5s-2.7 1-2.7 2.8c0 1.9 1.5 3.3 3.3 3.3 2.5 0 4.1-1.3 6.1-5.6m-10.7-5-.6-1.3c-1.1.5-2 .7-2.9.7-1.9 0-2.4-1-2.4-2.3v-12.1h5.1v-2.3h-5.1v-3.7h-.7l-7.2 4.7v1.3h2.9v13.1c0 2.6 1.5 4 4.4 4 2.3.1 4.5-.7 6.5-2.1m-15.3.5c-2.5-.4-2.8-.9-2.9-3.1v-15.3h-2l-5.9 3.9v.9h2.8v10.6c0 2.2-.4 2.7-2.8 3.1v1.2h10.7l.1-1.3zm-5.7-21.4c1.7 0 3-1.4 3-3.1 0-1.5-1.2-2.8-2.7-2.8-1.8 0-3.1 1.4-3.1 3.1 0 1.6 1.2 2.8 2.8 2.8m-7 16.8c0-3.7-3.1-4.9-6-5.8-2.8-.9-4.8-1.5-4.8-3.6 0-1.1.8-2.2 2.5-2.2 2 0 3.8 1.2 6 3.7l1-.5-1.5-5h-.6l-.7.6c-1.1-.5-2.4-.8-3.8-.8-4.2 0-7 2.5-7 6.1 0 3.7 3.1 4.8 6 5.8 2.8 1 4.8 1.5 4.8 3.6 0 1.3-1 2.3-2.9 2.3-2.7 0-4.7-1.8-7.2-4.9l-1.1.4 1.6 6.2h.7l1.2-.8c1.3.6 2.8 1 4.4 1 4.1.2 7.4-2.2 7.4-6.1m-20.8 4.7c-2.6-.4-3-1-3-3.4V136c.8-1.4 1.6-2.5 2.4-3.2 0 1.6 1.1 2.6 2.4 2.6 1.4 0 2.7-1.1 2.7-3.2 0-1.8-1-2.8-2.8-2.8-2 0-3.5 1.6-4.9 4v-4h-1.8l-5.8 3.8v.9h2.8v10.7c0 2.2-.4 2.8-2.6 3.1v1.2h10.6v-1.4zm-25.1-10.9c0-3.2 1.4-5.2 4-5.2 1.8 0 3 1.3 3.5 3.9l-7.4 2.6c-.1-.4-.1-.8-.1-1.3m12.5 8.6-1.1-.8c-1.1 1.2-2.7 2.1-4.6 2.1-3.7 0-5.8-2.8-6.5-6.4l12-4c-.2-4.2-3.4-6.6-7.3-6.6-5.6 0-9.6 4.5-9.6 10.1 0 5.5 3.5 9.7 9.8 9.7 3.7-.1 6-1.8 7.3-4.1m-21-9.9c1.5-3.3 2-4 3.5-4.4V130h-7.9v1.1c2.6.6 2.9 1.9 1.7 4.7l-3 7.3-3.8-8.5c-.8-1.9-.7-3 2.1-3.3v-1.2h-10.5v1.2c1.2.3 1.8.8 2.8 3.1l6.9 14.9h2.1l6.1-13.8zm-18.3 12.3c-2.5-.4-2.8-.9-2.9-3.1v-15.3h-2l-5.9 3.9v.9h2.8v10.6c0 2.2-.4 2.7-2.8 3.1v1.2h10.7l.1-1.3zm-5.7-21.4c1.7 0 3-1.4 3-3.1 0-1.5-1.2-2.8-2.7-2.8-1.8 0-3.1 1.4-3.1 3.1 0 1.5 1.2 2.8 2.8 2.8m-20.2 21.4c-2.3-.3-2.6-.9-2.7-3.1v-9.3c2-1.8 3.6-2.7 5.1-2.7 2 0 2.5 1 2.5 2.8v9.1c0 2.2-.4 2.8-2.6 3.1v1.2h10.3v-1.2c-2.3-.3-2.6-.9-2.7-3.1V135c0-3.2-1.4-5.5-5.4-5.5-2.5 0-4.9 1.5-7.3 3.6v-3.8H240l-5.8 3.8v.9h2.8v10.7c0 2.2-.4 2.8-2.6 3.1v1.2h10.3l-.1-1.2zm-43.7-23.4v12c0 7.8 4.1 13.2 14.3 13.2 10.2 0 14.3-5.4 14.2-13v-9.7c0-4.7 1.3-5.9 3.6-6.5v-1.2h-9.7v1.2c2.3.6 3.6 1.8 3.6 6.5v9.7c0 6.8-3.5 9.9-10.3 9.9-6.7 0-10.3-3.1-10.3-9.9v-12.2c0-3 .9-3.6 3.4-3.9v-1.3h-12.2v1.3c2.6.3 3.4.8 3.4 3.9M432.7 101.5c-2.3-.3-2.6-.9-2.7-3.1v-9.3c2-1.8 3.6-2.7 5.1-2.7 2 0 2.5 1 2.5 2.8v9.1c0 2.2-.4 2.8-2.6 3.1v1.2h10.3v-1.2c-2.3-.3-2.6-.9-2.7-3.1v-9.6c0-3.2-1.4-5.5-5.4-5.5-2.5 0-4.9 1.5-7.3 3.6V83h-1.8l-5.8 3.8v.9h2.8v10.7c0 2.2-.4 2.8-2.6 3.1v1.2h10.3l-.1-1.2zm-16 0c-2.6-.4-3-1-3-3.4v-8.3c.8-1.4 1.6-2.5 2.4-3.2 0 1.6 1.1 2.6 2.4 2.6 1.4 0 2.7-1.1 2.7-3.2 0-1.8-1-2.8-2.8-2.8-2 0-3.5 1.6-4.9 4v-4h-1.8l-5.8 3.8v.9h2.8v10.7c0 2.2-.4 2.8-2.6 3.1v1.2h10.6v-1.4zm-25.1-10.8c0-3.2 1.4-5.2 4-5.2 1.8 0 3 1.3 3.5 3.9l-7.4 2.6c-.1-.5-.1-.9-.1-1.3m12.6 8.5-1.1-.8c-1.1 1.2-2.7 2.1-4.6 2.1-3.7 0-5.8-2.8-6.5-6.4l12-4c-.2-4.2-3.4-6.6-7.3-6.6-5.6 0-9.6 4.5-9.6 10.1 0 5.5 3.5 9.7 9.8 9.7 3.6-.1 5.9-1.8 7.3-4.1m-18.5 1.8-.6-1.3c-1.1.5-2 .7-2.9.7-1.9 0-2.4-1-2.4-2.3V86h5.1v-2.3h-5.1V80h-.7l-7.2 4.7V86h2.9v13.1c0 2.6 1.5 4 4.4 4 2.3.1 4.5-.7 6.5-2.1m-15.2-4.1c0-3.7-3.1-4.9-6-5.8-2.8-.9-4.8-1.5-4.8-3.6 0-1.1.8-2.2 2.5-2.2 2 0 3.8 1.2 6 3.7l1-.5-1.5-5h-.6l-.7.6c-1.1-.5-2.4-.8-3.8-.8-4.2 0-7 2.5-7 6.1 0 3.7 3.1 4.8 6 5.8 2.8 1 4.8 1.5 4.8 3.6 0 1.3-1 2.3-2.9 2.3-2.7 0-4.7-1.8-7.2-4.9l-1.1.4 1.6 6.2h.7l1.2-.8c1.3.6 2.8 1 4.4 1 4.1.2 7.4-2.2 7.4-6.1m-30.8.9c0-2 .9-3 5.6-4.3v5.8c-1.1.9-2.1 1.3-3.1 1.3-1.6 0-2.5-.9-2.5-2.8m8.8 5.3c1.7 0 3.6-.8 4.8-1.7l-.4-1.1c-2 .4-2.7.1-2.7-1.2V88.4c0-3.2-1.4-4.9-5.9-4.9-5.1 0-8.8 2.7-8.8 5.3 0 1.2.8 2.3 2.3 2.3 1.6 0 2.4-1.1 2.7-2.2.2-1.2-.2-2.2-.8-2.7 1-.5 2-.7 3-.7 1.7 0 2.6.6 2.6 2.2v4c-7.2 1.8-10.5 3.3-10.4 7.2 0 2.9 1.9 4.5 4.9 4.5 1.9 0 4-.8 5.9-2.3.1 1.3 1.1 2 2.8 2m-28.4-12.3c0-3.2 1.4-5.2 4-5.2 1.8 0 3 1.3 3.5 3.9l-7.4 2.6c-.1-.4-.1-.9-.1-1.3m12.5 8.5-1.1-.8c-1.1 1.2-2.7 2.1-4.6 2.1-3.7 0-5.8-2.8-6.5-6.4l12-4c-.2-4.2-3.4-6.6-7.3-6.6-5.6 0-9.6 4.5-9.6 10.1 0 5.5 3.5 9.7 9.8 9.7 3.7-.1 6-1.8 7.3-4.1m-31.9 2.4c-2.3-.3-2.6-.9-2.7-3.1v-9.3c1.9-1.8 3.4-2.7 5.1-2.7 2 0 2.5 1 2.5 2.8v9.1c0 2.2-.4 2.8-2.6 3.1v1.2h10.3v-1.2c-2.3-.3-2.6-.9-2.7-3.1v-9.6c0-3.2-1.4-5.5-5.4-5.5-2.4 0-4.8 1.5-7.2 3.5V71h-1.5l-6.4 4.2v.9h2.9v22.4c0 2.2-.4 2.8-2.6 3.1v1.2h10.3v-1.1zm-11.5-.5-.6-1.3c-1.1.5-2 .7-2.9.7-1.9 0-2.4-1-2.4-2.3V86.2h5.1v-2.3h-5.1v-3.7h-.7l-7.2 4.7v1.3h2.9v13.1c0 2.6 1.5 4 4.4 4 2.4.1 4.6-.7 6.5-2.1m-19.6.6c-2.6-.4-3-1-3-3.4v-8.3c.8-1.4 1.6-2.5 2.4-3.2 0 1.6 1.1 2.6 2.4 2.6s2.7-1.1 2.7-3.2c0-1.8-1-2.8-2.8-2.8-2 0-3.5 1.6-4.9 4v-4h-1.8l-5.8 3.8v.9h2.8v10.7c0 2.2-.4 2.8-2.6 3.1v1.2h10.6v-1.4zm-29-10.3c0-3.6 1.6-5.9 4.8-5.9 4.2 0 5.5 5.2 5.5 10 0 3.6-1.6 5.9-4.8 5.9-4.2 0-5.5-5.2-5.5-10m15.4 1.8c0-5.2-3.5-9.7-10-9.6-6.5 0-10.4 4.7-10.4 10.2 0 5.2 3.5 9.7 10 9.6 6.5-.1 10.4-4.8 10.4-10.2m-26.2-12.5c0-4.7 1.3-5.9 3.6-6.5v-1.2h-9.7v1.2c2.3.6 3.6 1.8 3.6 6.5v14.1l-20.5-20.6c-1.1-1.1-1.6-1.2-2.3-1.2h-7.6v1.2c1.6.2 2.6.8 4.5 2.6.6.6 1.2 1.2 1.2 2.4v16.1c0 4.7-1.3 5.9-3.6 6.5v1.2h9.7v-1.2c-2.3-.6-3.6-1.8-3.6-6.5V80.3l23 23.1h1.6l.1-22.6z"
+                                    class="st2"></path>
+                                <path
+                                    d="M172.5 63.3c0-19.6 6.6-26 19.8-31V29h-43.2v3.2c13.2 5 19.8 11.4 19.8 31v57.5L77.4 33.4c-4.2-3.9-5.3-4.3-8-4.3H35v3.2c7.6.8 12.1 2.9 23 13.5l4.2 4v65.6c0 19.6-6.6 26-19.8 31v3.2h43.2v-3.2c-13.2-5-19.8-11.4-19.8-31V52.8l103.5 97.5h3.2v-87z"
+                                    style="fill:#d4202d"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="http://www.bradford.ac.uk">
+                        <img src="https://www.bradford.ac.uk/media-v8/t4-bank/assets/images/university-of-bradford-logo-postgraduate.png"
+                            alt="" srcset="">
+                    </a>
+                </div>
+            </section>
+
+            <!-- Accreditations Section -->
+            <section class="accreditations">
+                <h2><i class="fas fa-certificate"></i> Accreditations</h2>
+                <div class="accreditation-logos">
+                    <a href="https://www.acswasc.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.acswasc.org/wp-content/uploads/2020/01/acs-logo-1.png" alt="WASC" />
+                    </a>
+                    <a href="https://www.ibo.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="http://www.iss.edu.sg/wp-content/uploads/2016/11/TriWorldSchool2Colourlarge-300x293.jpg"
+                            alt="IBO" />
+                    </a>
+                    <a href="https://www.neasc.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.neasc.org/themes/custom/neasc_v2/images/logo-mobile.png" alt="NEASC" />
+                    </a>
+                    <a href="https://ncpsa.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://lakewood-montessori.com/wp-content/uploads/2020/10/NCPSA-logo.jpg"
+                            alt="NCPSA" />
+                    </a>
+                    <a href="https://www.acsi.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.acsi.org/images/default-source/school-accreditation/acsi_accredited.jpg"
+                            alt="ACSI" />
+                    </a>
+                    <a href="https://accreditationinternational.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://accreditationinternational.org/wp-content/uploads/2022/09/logo.png"
+                            alt="Ai" />
+                    </a>
+                    <a href="https://msa-cess.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://3.files.edl.io/d963/18/07/02/143822-88a3e469-5555-4699-a072-ce57dd6ee75a.png"
+                            alt="MSA CESS" />
+                    </a>
+                    <a href="https://www.cognia.org//" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/Cognia.jpg" alt="Cognia" />
+                    </a>
+                </div>
+            </section>
+
+            <!-- School Search Section -->
+            <section class="school-search">
+                <h2><i class="fas fa-search"></i> Find PEAK Curriculum Schools</h2>
+                <div class="search-container">
+                    <input type="text" id="schoolSearchInput" placeholder="Search for schools by location or name" />
+                    <button id="schoolSearchButton">Search</button>
+                </div>
+                <div class="filter-container">
+                    <button id="allFilterButton" class="filter-button" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="elementary">Elementary</button>
+                    <button class="filter-button" data-filter="middle">Middle</button>
+                    <button class="filter-button" data-filter="high">High</button>
+                    <button class="filter-button" data-filter="international">International</button>
+                    <button id="clearFiltersButton">Clear Filters</button>
+                </div>
+                <div id="schoolSearchResults"></div>
+            </section>
+
+            <!-- Join PEAK Section -->
+            <section class="join-peak">
+                <h2><i class="fas fa-user-plus"></i> Join the PEAK Curriculum</h2>
+                <p>Interested in implementing the PEAK curriculum at your school? Learn more about how you can join our
+                    growing network of innovative educational institutions.</p>
+                <button id="joinPeakButton">Learn How to Join</button>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq">
+                <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <div class="faq-categories">
+                    <button class="faq-category active" data-category="general">General</button>
+                    <button class="faq-category" data-category="academics">Academics</button>
+                    <button class="faq-category" data-category="admissions">Admissions</button>
+                    <button class="faq-category" data-category="faith">Faith Integration</button>
+                    <button class="faq-category" data-category="extracurricular">Extracurricular</button>
+                    <button class="faq-category" data-category="technology">Technology</button>
+                </div>
+                <div class="faq-container"></div>
+            </section>
+        </div>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- BEGIN FOOTER SECTION -->
+    <footer>
+        <img onClick="redirectHome()" src="./assets/images/logo.png" alt="EIA's Logo" class="footer__logo-img" />
+        <h1 class="footer__logo">Everest Integrated Academy</h1>
+        <ul class="permalinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./fees.html">Tuition</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="footer__socials">
+            <a href="https://facebook.com/eia"><img src="./assets/icons/facebook.svg" alt="EIA's Facebook" /></a>
+            <a href="https://instagram.com/eia"><img src="./assets/icons/instagram.svg" alt="EIA's Instagram" /></a>
+            <a href="https://twitter.com/eia"><img src="./assets/icons/twitter.svg" alt="EIA's Twitter" /></a>
+        </div>
+        <div class="copyright">
+            <small id="copytext"></small>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <div class="social-share-container">
+        <button class="share-btn facebook"><i class="fab fa-facebook-f"></i></button>
+        <button class="share-btn twitter"><i class="fab fa-twitter"></i></button>
+        <button class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></button>
+        <button class="share-btn email"><i class="fas fa-envelope"></i></button>
+    </div>
+
+    <script>
+        const date = new Date().getFullYear();
+        const copyrightText = document.getElementById("copytext");
+        copyrightText.textContent = `Copyright © ${date} Everest Integrated Academy. All rights reserved.`;
+    </script>
+    <script src="./scripts/curriculum.js"></script>
+    <!-- <script src="./scripts/fontawesome/all.min.js"></script> -->
+</body>
+
+</html>

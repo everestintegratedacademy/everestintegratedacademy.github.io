@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everest Integrated Academy" />
+    <meta property="og:url" content="https://everestintegratedacademy.aiacademy.ac.ug" />
+    <meta property="og:description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="author" content="Dennis Sebalemba" />
+    <meta name="default-theme" content="auto" />
+    <meta name="description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="keywords" content="web,site,about,home,website,school,eia" />
+    <title>Home - Everest Integrated Academy</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <!-- <link rel="stylesheet" href="./css/lucide/lucide.css" /> -->
+    <link rel="stylesheet" href="./css/feather.css" />
+    <link rel="stylesheet" href="./css/fontawesome/fontawesome.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/splide.min.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+    <!-- BEGIN NAVBAR SECTION -->
+    <nav id="navbar">
+        <div class="logo__container" onClick="redirectHome()">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+            <p>EVEREST INTEGRATED ACADEMY</p>
+        </div>
+        <a href="./index.html" class="navlink">
+            <i class="icon icon-home"></i>
+            <p>Home</p>
+        </a>
+        <!-- <a href="./about.html" class="navlink">
+            <i class="icon icon-help-circle"></i>
+            <p>About Us</p>
+        </a> -->
+        <div class="navlink dropdown">
+            <a href="./about.html" class="navlink">
+                <i class="icon icon-help-circle"></i>
+                <p>About Us</p>
+            </a>
+            <div class="dropdown-content">
+                <a href="./board-of-directors.html" class="navlink">
+                    <p>School Board</p>
+                </a>
+                <a href="./our-story.html" class="navlink">
+                    <p>Our Story</p>
+                </a>
+                <a href="./mission.html" class="navlink">
+                    <p>Our Mission</p>
+                </a>
+            </div>
+        </div>
+        <a href="./blog.html" class="navlink">
+            <i class="icon icon-file-text"></i>
+            <p>Blog</p>
+        </a>
+        <a href="./gallery.html" class="navlink">
+            <i class="icon icon-image"></i>
+            <p>Gallery</p>
+        </a>
+        <a href="./fees.html" class="navlink">
+            <i class="icon icon-dollar-sign"></i>
+            <p>Tuition</p>
+        </a>
+        <a href="./curriculum.html" class="navlink">
+            <i class="icon icon-book-open"></i>
+            <p>Curriculum</p>
+        </a>
+        <a href="./contact.html" class="navlink">
+            <i class="icon icon-headphones"></i>
+            <p>Contact Us</p>
+        </a>
+    </nav>
+    <script src="./scripts/navbar.js"></script>
+    <!-- END NAVBAR SECTION -->
+
+    <!-- BEGIN HERO SECTION -->
+
+    <!-- BEGIN BANNER SECTION -->
+    <div class="banner" id="admissionsBanner">
+        <i class="icon icon-x banner__btn-close" id="close-banner-btn"></i>
+        <p class="admissions__msg">
+            Admissions for the 2023 August intake are ongoing.
+        </p>
+        <button class="banner__btn-more">Apply Now</button>
+    </div>
+    <script src="./scripts/banner.js"></script>
+    <!-- END BANNER SECTION -->
+
+    <!-- BEGIN HEADER SECTION -->
+    <div class="header__banner">
+        <div class="container header__container">
+            <div class="row align-items-center g-0 gy-5 header">
+                <div class="col-lg-6">
+                    <div class="header__banner-title">
+                        <h1>
+                            A good <span>#education</span> is always a base of a bright
+                            future.
+                        </h1>
+                        <p>
+                            <em>Education is not the filling of a vessel, but the lighting of
+                                a flame</em>
+                            - Plutarch
+                        </p>
+                        <ul class="header__banner-list">
+                            <li>
+                                <button onClick="location.href='./about.html'" class="btn btn-primary">
+                                    About Us
+                                </button>
+                            </li>
+                            <li>
+                                <button onClick="location.href='./contact.html'" class="btn">
+                                    Let's Talk
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="header__banner-img">
+                        <img src="./assets/images/logo.png" alt="Logo" />
+                    </div>
+                </div>
+            </div>
+            <h2>Shaping the Future Today</h2>
+        </div>
+    </div>
+    <!-- END HEADER SECTION -->
+
+    <!-- BEGIN COUNTER SECTION -->
+    <section>
+        <div class="counter__holder">
+            <div class="container counter__container">
+                <ul id="counter" class="counter__stats">
+                    <li>
+                        <div class="counter__stats-info">
+                            <h2>Taught</h2>
+                            <h4><span class="counter__one"></span></h4>
+                            <div class="counter__icon">
+                                <i class="icon icon-users"></i>
+                            </div>
+                            <p>Students</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="counter__stats-info">
+                            <h2>Created</h2>
+                            <h4><span class="counter__two"></span></h4>
+                            <div class="counter__icon">
+                                <i class="icon icon-book-open"></i>
+                            </div>
+                            <p>Programs</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="counter__stats-info">
+                            <h2>Attained</h2>
+                            <h4><span class="counter__three"></span></h4>
+                            <div class="counter__icon">
+                                <i class="icon icon-award"></i>
+                            </div>
+                            <p>Awards</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <button onClick="location.href='./about.html'" class="btn btn-primary more__info-btn">
+                    Find Out More
+                </button> -->
+                <a href="./about.html" class="btn btn-primary more__info-btn">Find Out More</a>
+            </div>
+        </div>
+    </section>
+    <!-- END COUNTER SECTION -->
+
+    <!-- BEGIN PLATFORM SECTION -->
+    <section class="platform__section">
+        <div class="container platform__container">
+            <div class="platform__content">
+                <div class="platform__content-left">
+                    <div class="platform__content-left-subtitle">
+                        <h5>Dream Big. Start Small</h5>
+                    </div>
+                    <h2>A message from the Principal.</h2>
+                    <p>
+                        Welcome to Everest Integrated Academy. We are very excited to know
+                        that you have thought about giving our school a choice to instill
+                        your child(ren) with wisdom, understanding and knowledge. At
+                        Everest, we ensure and try our very best to adhere to our vision
+                        and mission. Through this motivation, we drive ourselves to bring
+                        out the best in every student. At Everest, we use the Accelerated
+                        Christian Education (A.C.E) curriculum provided to us by
+                        Accelerated Education Enterprises (AEE). This curriculum enables
+                        us to give your child(ren) Biblical knowledge and teach them to
+                        practice Godly wisdom. Through this way, we have enabled and
+                        helped many of our students to lead successful lives in a broken
+                        world. We continue to hope that Everest Integrated Academy will be
+                        the ideal school for your family and loved ones. Be Blessed!
+                    </p>
+                    <br />
+                    <small> Kyra Wess - Principal & Founder </small>
+                </div>
+                <div class="platform__content-right">
+                    <div class="platform__img">
+                        <img src="./assets/avatars/anya-chalotra.jpg" alt="Kyra Wess" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PLATFORM SECTION -->
+
+    <!-- END PARTNERS SECTION -->
+    <section class="partners__section">
+        <div class="container partners__container">
+            <div class="partners">
+                <ul class="partners__list">
+                    <h2 class="partner__heading">SPONSORED BY</h2>
+                    <li class="partner">
+                        <a href="https://wildanimals.org"><img src="./assets/images/brands/img-01.png" alt="Partner"
+                                class="partner__image" /></a>
+                        <a href="https://today.news"><img src="./assets/images/brands/img-02.png" alt="Partner"
+                                class="partner__image" /></a>
+                        <a href="https://newsinternational.com"><img src="./assets/images/brands/img-03.png" alt="Partner"
+                                class="partner__image" /></a>
+                        <a href="https://retro.tv"><img src="./assets/images/brands/img-04.png" alt="Partner"
+                                class="partner__image" /></a>
+                        <a href="https://comedy.com"><img src="./assets/images/brands/img-05.png" alt="Partner"
+                                class="partner__image" /></a>
+                        <a href="https://traveltv.net"><img src="./assets/images/brands/img-06.png" alt="Partner"
+                                class="partner__image" /></a>
+                        <a href="https://slsbusiness.com"><img src="./assets/images/brands/img-07.png" alt="Partner"
+                                class="partner__image" /></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- END PARTNERS SECTION -->
+
+    <!-- BEGIN TESTIMONIALS SECTION -->
+    <section class="testimonials_section">
+        <div class="container testimonials_container">
+        </div>
+    </section>
+    <!-- END TESTIMONIALS SECTION -->
+
+    <!-- END HERO SECTION -->
+
+    <!-- BEGIN FOOTER SECTION -->
+
+    <footer>
+        <img onClick="redirectHome()" src="./assets/images/logo.png" alt="EIA's Logo" class="footer__logo-img" />
+
+        <h1 class="footer__logo">Everest Integrated Academy</h1>
+
+        <ul class="permalinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./fees.html">Tuition</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="footer__socials">
+            <a href="https://facebook.com/eia"><img src="./assets/icons/facebook.svg" alt="EIA's Facebook" /></a>
+            <a href="https://instagram.com/eia"><img src="./assets/icons/instagram.svg" alt="EIA's Instagram" /></a>
+            <a href="https://twitter.com/eia"><img src="./assets/icons/twitter.svg" alt="EIA's Twitter" /></a>
+        </div>
+
+        <div class="copyright">
+            <small id="copytext"> </small>
+        </div>
+    </footer>
+
+    <script>
+        const date = new Date().getFullYear();
+        const copyrightText = document.getElementById("copytext");
+
+        copyrightText.textContent =
+            "Copyright © " +
+            date +
+            " Everest Integrated Academy. All rights reserved.";
+    </script>
+
+    <!-- END FOOTER SECTION -->
+    <script src="./scripts/home/counterUp.js"></script>
+</body>
+
+</html>

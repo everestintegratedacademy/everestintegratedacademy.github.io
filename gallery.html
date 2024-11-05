@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everest Integrated Academy" />
+    <meta property="og:url" content="https://everestintegratedacademy.aiacademy.ac.ug" />
+    <meta property="og:description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="author" content="Dennis Sebalemba" />
+    <meta name="default-theme" content="auto" />
+    <meta name="description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="keywords" content="web,site,about,home,website,school,eia" />
+    <title>Gallery - Everest Integrated Academy</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <!-- <link rel="stylesheet" href="./css/lucide/lucide.css" /> -->
+    <link rel="stylesheet" href="./css/feather.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="https://kit.fontawesome.com/1890c09728.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+    <script src="./scripts/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
+    <!-- BEGIN NAVBAR SECTION -->
+    <nav id="navbar">
+        <div class="logo__container" onClick="redirectHome()">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+            <p>EVEREST INTEGRATED ACADEMY</p>
+        </div>
+        <a href="./index.html" class="navlink">
+            <i class="icon icon-home"></i>
+            <p>Home</p>
+        </a>
+        <!-- <a href="./about.html" class="navlink">
+            <i class="icon icon-help-circle"></i>
+            <p>About Us</p>
+        </a> -->
+        <div class="navlink dropdown">
+            <a href="./about.html" class="navlink">
+                <i class="icon icon-help-circle"></i>
+                <p>About Us</p>
+            </a>
+            <div class="dropdown-content">
+                <a href="./board-of-directors.html" class="navlink">
+                    <p>School Board</p>
+                </a>
+                <a href="./our-story.html" class="navlink">
+                    <p>Our Story</p>
+                </a>
+                <a href="./mission.html" class="navlink">
+                    <p>Our Mission</p>
+                </a>
+            </div>
+        </div>
+        <a href="./blog.html" class="navlink">
+            <i class="icon icon-file-text"></i>
+            <p>Blog</p>
+        </a>
+        <a href="./gallery.html" class="navlink">
+            <i class="icon icon-image"></i>
+            <p>Gallery</p>
+        </a>
+        <a href="./fees.html" class="navlink">
+            <i class="icon icon-dollar-sign"></i>
+            <p>Tuition</p>
+        </a>
+        <a href="./curriculum.html" class="navlink">
+            <i class="icon icon-book-open"></i>
+            <p>Curriculum</p>
+        </a>
+        <a href="./contact.html" class="navlink">
+            <i class="icon icon-headphones"></i>
+            <p>Contact Us</p>
+        </a>
+    </nav>
+    <script src="./scripts/navbar.js"></script>
+    <!-- END NAVBAR SECTION -->
+
+    <main class="container">
+        <h1 class="gallery-title">Gallery</h1>
+        <div class="gallery-controls">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search blog posts...">
+                <button id="search-button"><i class="icon icon-search"></i></button>
+            </div>
+            <select id="category-filter" class="category-filter">
+                <option value="All">All Categories</option>
+                <option value="Nature">Nature</option>
+                <option value="Animation">Animation</option>
+                <option value="Urban">Urban</option>
+            </select>
+        </div>
+        <div class="filter-section">
+            <div id="tag-filters">
+                <!-- Tag filters will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="archive-section">
+            <h3>Archives</h3>
+            <ul id="year-filters">
+                <!-- Year filters will be dynamically inserted here -->
+            </ul>
+        </div>
+        <div id="gallery-grid" class="gallery-grid">
+            <!-- Gallery items will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <div id="media-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-sidebar">
+            <h3>Related Media</h3>
+            <div id="related-media-container" class="related-media-grid">
+                <!-- Related media items will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="modal-main">
+            <button id="close-modal" class="close-button"><i class="fas fa-times"></i></button>
+            <div id="modal-media-container" class="modal-media-container">
+                <!-- Selected media item will be inserted here -->
+            </div>
+            <div class="media-info">
+                <h2 id="media-title" class="media-title"></h2>
+                <p id="media-description" class="media-description"></p>
+                <p id="media-category" class="media-category"></p>
+            </div>
+            <div class="media-actions">
+                <button id="download-button" class="action-button"><i class="fas fa-download"></i></button>
+                <button id="like-button" class="action-button"><i class="far fa-heart"></i> <span id="like-count"></span></button>
+                <button id="share-button" class="action-button"><i class="fas fa-share-alt"></i></button>
+            </div>
+        </div>
+    </div>
+    <button id="prev-button" class="nav-button prev-button"><i class="fas fa-chevron-left"></i></button>
+    <button id="next-button" class="nav-button next-button"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+    <div id="media-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-button"><i class="fas fa-times"></i></button>
+            <button id="fullscreen-button" class="fullscreen-button"><i class="fas fa-expand"></i></button>
+            <button id="download-button" class="download-button"><i class="fas fa-download"></i></button>
+            <div id="modal-media-container" class="modal-media-container">
+                <!-- Selected media item will be inserted here -->
+            </div>
+            <div class="media-info">
+                <h2 id="media-title" class="media-title"></h2>
+                <p id="media-description" class="media-description"></p>
+                <p id="media-category" class="media-category"></p>
+            </div>
+            <div class="media-actions">
+                <button id="like-button" class="action-button"><i class="far fa-heart"></i> <span id="like-count"></span></button>
+                <button id="share-button" class="action-button"><i class="fas fa-share"></i></button>
+            </div>
+            <div class="related-media">
+                <h3>Related Media</h3>
+                <div class="related-media-carousel">
+                    <button class="carousel-nav prev"><i class="fas fa-chevron-up"></i></button>
+                    <div id="related-media-container" class="related-media-container">
+                        <!-- Related media items will be dynamically inserted here -->
+                    </div>
+                    <button class="carousel-nav next"><i class="fas fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGIN FOOTER SECTION -->
+
+    <footer>
+        <img onClick="redirectHome()" src="./assets/images/logo.png" alt="EIA's Logo" class="footer__logo-img" />
+
+        <h1 class="footer__logo">Everest Integrated Academy</h1>
+
+        <ul class="permalinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./fees.html">Tuition</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="footer__socials">
+            <a href="https://facebook.com/eia"><img src="./assets/icons/facebook.svg" alt="EIA's Facebook" /></a>
+            <a href="https://instagram.com/eia"><img src="./assets/icons/instagram.svg" alt="EIA's Instagram" /></a>
+            <a href="https://twitter.com/eia"><img src="./assets/icons/twitter.svg" alt="EIA's Twitter" /></a>
+        </div>
+
+        <div class="copyright">
+            <small id="copytext"> </small>
+        </div>
+    </footer>
+
+    <script>
+        const date = new Date().getFullYear();
+        const copyrightText = document.getElementById("copytext");
+
+        copyrightText.textContent =
+            "Copyright © " +
+            date +
+            " Everest Integrated Academy. All rights reserved.";
+    </script>
+    <script src="./scripts/gallery.js"></script>
+
+    <!-- END FOOTER SECTION -->
+</body>
+
+</html>

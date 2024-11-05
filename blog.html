@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everest Integrated Academy" />
+    <meta property="og:url" content="https://everestintegratedacademy.aiacademy.ac.ug" />
+    <meta property="og:description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="author" content="Dennis Sebalemba" />
+    <meta name="default-theme" content="auto" />
+    <meta name="description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="keywords" content="web,site,about,home,website,school,eia" />
+    <title>Blog - Everest Integrated Academy</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <!-- <link rel="stylesheet" href="./css/lucide/lucide.css" /> -->
+    <link rel="stylesheet" href="./css/feather.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+    <!-- BEGIN NAVBAR SECTION -->
+    <nav id="navbar">
+        <div class="logo__container" onClick="redirectHome()">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+            <p>EVEREST INTEGRATED ACADEMY</p>
+        </div>
+        <a href="./index.html" class="navlink">
+            <i class="icon icon-home"></i>
+            <p>Home</p>
+        </a>
+        <!-- <a href="./about.html" class="navlink">
+            <i class="icon icon-help-circle"></i>
+            <p>About Us</p>
+        </a> -->
+        <div class="navlink dropdown">
+            <a href="./about.html" class="navlink">
+                <i class="icon icon-help-circle"></i>
+                <p>About Us</p>
+            </a>
+            <div class="dropdown-content">
+                <a href="./board-of-directors.html" class="navlink">
+                    <p>School Board</p>
+                </a>
+                <a href="./our-story.html" class="navlink">
+                    <p>Our Story</p>
+                </a>
+                <a href="./mission.html" class="navlink">
+                    <p>Our Mission</p>
+                </a>
+            </div>
+        </div>
+        <a href="./blog.html" class="navlink">
+            <i class="icon icon-file-text"></i>
+            <p>Blog</p>
+        </a>
+        <a href="./gallery.html" class="navlink">
+            <i class="icon icon-image"></i>
+            <p>Gallery</p>
+        </a>
+        <a href="./fees.html" class="navlink">
+            <i class="icon icon-dollar-sign"></i>
+            <p>Tuition</p>
+        </a>
+        <a href="./curriculum.html" class="navlink">
+            <i class="icon icon-book-open"></i>
+            <p>Curriculum</p>
+        </a>
+        <a href="./contact.html" class="navlink">
+            <i class="icon icon-headphones"></i>
+            <p>Contact Us</p>
+        </a>
+    </nav>
+    <script src="./scripts/navbar.js"></script>
+    <!-- END NAVBAR SECTION -->
+
+    <main class="container">
+        <h1 class="blog-title">Our Blog</h1>
+        <div class="blog-container">
+            <aside class="blog-sidebar">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search blog posts...">
+                    <button id="search-button"><i class="icon icon-search"></i></button>
+                </div>
+                <div class="filter-section">
+                    <h3>Filter by Tags</h3>
+                    <div id="tag-filters">
+                        <!-- Tag filters will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="archive-section">
+                    <h3>Archive</h3>
+                    <ul id="year-filters">
+                        <!-- Year filters will be dynamically inserted here -->
+                    </ul>
+                </div>
+            </aside>
+            <div class="blog-main">
+                <div class="blog-grid">
+                    <!-- Blog posts will be dynamically inserted here -->
+                </div>
+                <div class="pagination">
+                    <!-- Pagination will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BEGIN FOOTER SECTION -->
+
+    <footer>
+        <img onClick="redirectHome()" src="./assets/images/logo.png" alt="EIA's Logo" class="footer__logo-img" />
+
+        <h1 class="footer__logo">Everest Integrated Academy</h1>
+
+        <ul class="permalinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./fees.html">Tuition</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="footer__socials">
+            <a href="https://facebook.com/eia"><img src="./assets/icons/facebook.svg" alt="EIA's Facebook" /></a>
+            <a href="https://instagram.com/eia"><img src="./assets/icons/instagram.svg" alt="EIA's Instagram" /></a>
+            <a href="https://twitter.com/eia"><img src="./assets/icons/twitter.svg" alt="EIA's Twitter" /></a>
+        </div>
+
+        <div class="copyright">
+            <small id="copytext"> </small>
+        </div>
+    </footer>
+
+    <script>
+        const date = new Date().getFullYear();
+        const copyrightText = document.getElementById("copytext");
+
+        copyrightText.textContent =
+            "Copyright © " +
+            date +
+            " Everest Integrated Academy. All rights reserved.";
+    </script>
+
+    <script src="./scripts/blog/blog.js"></script>
+    <!-- END FOOTER SECTION -->
+</body>
+
+</html>

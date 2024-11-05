@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everest Integrated Academy" />
+    <meta property="og:url" content="https://everestintegratedacademy.aiacademy.ac.ug" />
+    <meta property="og:description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="author" content="Dennis Sebalemba" />
+    <meta name="default-theme" content="auto" />
+    <meta name="description" content="The official school website of the Everest Integrated Academy." />
+    <meta name="keywords" content="web,site,about,home,website,school,eia" />
+    <title>404 - Page Not Found</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <!-- <link rel="stylesheet" href="./css/lucide/lucide.css" /> -->
+    <link rel="stylesheet" href="./css/feather.css" />
+    <link rel="stylesheet" href="./css/errors.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+    <!-- BEGIN NAVBAR SECTION -->
+    <nav id="navbar">
+        <div class="logo__container" onClick="redirectHome()">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+            <p>EVEREST INTEGRATED ACADEMY</p>
+        </div>
+        <a href="./index.html" class="navlink">
+            <i class="icon icon-home"></i>
+            <p>Home</p>
+        </a>
+        <!-- <a href="./about.html" class="navlink">
+            <i class="icon icon-help-circle"></i>
+            <p>About Us</p>
+        </a> -->
+        <div class="navlink dropdown">
+            <a href="./about.html" class="navlink">
+                <i class="icon icon-help-circle"></i>
+                <p>About Us</p>
+            </a>
+            <div class="dropdown-content">
+                <a href="./board-of-directors.html" class="navlink">
+                    <p>School Board</p>
+                </a>
+                <a href="./our-story.html" class="navlink">
+                    <p>Our Story</p>
+                </a>
+                <a href="./mission.html" class="navlink">
+                    <p>Our Mission</p>
+                </a>
+            </div>
+        </div>
+        <a href="./blog.html" class="navlink">
+            <i class="icon icon-file-text"></i>
+            <p>Blog</p>
+        </a>
+        <a href="./gallery.html" class="navlink">
+            <i class="icon icon-image"></i>
+            <p>Gallery</p>
+        </a>
+        <a href="./fees.html" class="navlink">
+            <i class="icon icon-dollar-sign"></i>
+            <p>Tuition</p>
+        </a>
+        <a href="./curriculum.html" class="navlink">
+            <i class="icon icon-book-open"></i>
+            <p>Curriculum</p>
+        </a>
+        <a href="./contact.html" class="navlink">
+            <i class="icon icon-headphones"></i>
+            <p>Contact Us</p>
+        </a>
+    </nav>
+    <script src="./scripts/navbar.js"></script>
+    <!-- END NAVBAR SECTION -->
+    <div>
+        <div class="error__images-container" align="center">
+            <img src="./assets/images/number-4.png" alt="4" class="error__images">
+            <img src="./assets/images/number-0.png" alt="0" class="error__images">
+            <img src="./assets/images/number-4.png" alt="4" class="error__images">
+        </div>
+        <h1 class="header__h1">This page could not be found</h1>
+        
+        <div class="btn__errors">
+            <a href="mailto:dennis.sebalemba@gmail.com?subject=Broken Link Found - EIA website">
+                <button type="button" class="btn btn-error">Report Link</button>
+            </a>
+            <a onClick="window.history.back()">
+                <button type="button" class="btn btn-primary btn-error">Go Back</button>
+            </a>
+        </div>
+        
+        <h5 class="header__h5" id="useragent"></h5>
+    </div>
+    <script>
+        const agent = navigator.userAgent
+        const agentText = document.getElementById('useragent')
+        
+        agentText.textContent = 'User Agent: ' + agent
+    </script>
+
+    <!-- BEGIN FOOTER SECTION -->
+
+    <footer>
+        <img onClick="redirectHome()" src="./assets/images/logo.png" alt="EIA's Logo" class="footer__logo-img" />
+
+        <h1 class="footer__logo">Everest Integrated Academy</h1>
+
+        <ul class="permalinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./fees.html">Tuition</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="footer__socials">
+            <a href="https://facebook.com/eia"><img src="./assets/icons/facebook.svg" alt="EIA's Facebook" /></a>
+            <a href="https://instagram.com/eia"><img src="./assets/icons/instagram.svg" alt="EIA's Instagram" /></a>
+            <a href="https://twitter.com/eia"><img src="./assets/icons/twitter.svg" alt="EIA's Twitter" /></a>
+        </div>
+
+        <div class="copyright">
+            <small id="copytext"> </small>
+        </div>
+    </footer>
+
+    <script>
+        const date = new Date().getFullYear();
+        const copyrightText = document.getElementById("copytext");
+
+        copyrightText.textContent =
+            "Copyright © " +
+            date +
+            " Everest Integrated Academy. All rights reserved.";
+    </script>
+
+    <!-- END FOOTER SECTION -->
+</body>
+
+</html>
